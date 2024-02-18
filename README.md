@@ -11,7 +11,7 @@ Certifique-se de ter o Nginx instalado no seu sistema antes de usar essas ferram
 1. Clone este repositório:
 
     ```bash
-    git clone https://github.com/seu-usuario/nginx-configurator.git
+    git clone https://github.com/m4nd0mb3/nginx-configurator.git
     cd nginx-configurator
     ```
 
@@ -34,4 +34,4 @@ Sinta-se à vontade para contribuir com melhorias ou correções de bugs. Abra u
 
 ## Licença
 
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
+Este projeto está licenciado sob a [Apache License 2.0](LICENSE).
