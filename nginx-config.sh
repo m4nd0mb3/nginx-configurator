@@ -9,6 +9,7 @@ configure_proxy() {
     # Crie o arquivo de configuração do Nginx
     cat > "/etc/nginx/sites-available/$domain" <<EOF
 server {
+    client_max_body_size 64M;
     listen 80;
     server_name $domain;
 
