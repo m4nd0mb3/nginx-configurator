@@ -21,6 +21,13 @@ Certifique-se de ter o Nginx instalado no seu sistema antes de usar essas ferram
     bash configure-site.sh
     ```
 
+    Ou
+
+    - `make install`: Para copiar o script para `/bin` e torná-lo executável.
+    - `make uninstall`: Para remover o script de `/bin`.
+
+    Basta executar `make install` após modificar o script e `make uninstall` se precisar remover o script. 
+
 3. Siga as instruções para configurar o site desejado.
 
 ## Opções Disponíveis
