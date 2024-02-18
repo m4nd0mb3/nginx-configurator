@@ -4,6 +4,7 @@
 
 </center>
 
+##### "Maximize o Desempenho, Minimize a Complexidade com Nginx!"
 
 # Nginx Configurator
 
