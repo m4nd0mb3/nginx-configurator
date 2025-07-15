@@ -38,6 +38,31 @@ Certifique-se de ter o Nginx instalado no seu sistema antes de usar essas ferram
 
 3. Siga as instruções para configurar o site desejado.
 
+---
+
+### 🚀 Etapas sugeridas de melhoria
+
+| O que fazer | Como ajuda |
+|----|----|
+| `install.sh` para download automático | Instala rápida via `curl | sh` |
+| Criar **Release** no GitHub | URLs estáveis (`releases/tag/vX.Y.Z`) para download de scripts/binaries |
+| Adequação do Makefile | Permite publicar releases facilmente |
+| Verificação pós instalação | Confirma que o comando está no `$PATH` e executável |
+| Mensagens amigáveis | Usuário entende se `sudo` é necessário ou há erro de permissão |
+
+---
+
+### Exemplo de uso final
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/m4nd0mb3/nginx-configurator/develop/install.sh | sh
+
+```
+Ou com wget:
+```bash
+wget -qO- https://raw.githubusercontent.com/m4nd0mb3/nginx-configurator/develop/install.sh | sh
+```
+
 ## Opções Disponíveis
 
 - **Proxy Reverso**: Configure um site para atuar como proxy reverso para uma aplicação web.

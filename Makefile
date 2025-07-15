@@ -1,10 +1,19 @@
+NAME := nginx-config
+DEST := /usr/local/bin
+VERSION := $(shell git rev-parse --short HEAD)
+TAG := v$(VERSION)
+
 install:
-	sudo cp nginx-config.sh /bin/nginx-config
-	sudo chmod +x /bin/nginx-config
-	@echo "Script instalado com sucesso!"
+	cp $(NAME).sh $(DEST)/$(NAME)
+	chmod +x $(DEST)/$(NAME)
+	@echo "✅ Instalado em $(DEST)/$(NAME)"
 
 uninstall:
-	sudo rm -f /bin/nginx-config
-	@echo "Script removido com sucesso!"
+	rm -f $(DEST)/$(NAME)
+	@echo "🗑️ Removido de $(DEST)/$(NAME)"
 
-.PHONY: install uninstall
+release:
+	gh release create $(TAG) \
+		--title "Release $(TAG)" \
+		--notes "Versão automática baseada no commit $(VERSION)" \
+		$(NAME).sh
