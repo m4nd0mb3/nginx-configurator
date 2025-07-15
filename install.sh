@@ -2,7 +2,7 @@
 set -e
 
 NAME="nginx-config"
-RAW_URL="https://raw.githubusercontent.com/m4nd0mb3/nginx-configurator/main/nginx-config.sh"
+RAW_URL="https://raw.githubusercontent.com/m4nd0mb3/nginx-configurator/develop/nginx-config.sh"
 PATH_DIRS="/usr/local/bin /usr/bin $HOME/.local/bin"
 DEST=""
 USE_SUDO=""
